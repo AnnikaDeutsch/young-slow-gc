@@ -46,7 +46,7 @@ def parse_declination(dec_str):
 #------------------------------Read in Harris file and parse-------------------------------
 
 # Read the file and extract the relevant part
-with open('/Users/adeutsch/Desktop/UVA/25 Spring/research-pulsar/harris_cat.txt', 'r') as f:
+with open('/Users/adeutsch/Desktop/UVA/25 Spring/research-pulsar/young_slow_GC_project_code/harris_cat.txt', 'r') as f:
     lines = f.readlines()
 
 # Find the start and end indices for Part I data---------------------
@@ -119,7 +119,7 @@ combined_table['ID'] = [s.replace(" ", "_") for s in combined_table['ID']]
 
 #-------------------------------Read in the Baumgardt file, parse, and combine-------------------------------
 # Read the file and extract the relevant part
-with open('/Users/adeutsch/Desktop/UVA/25 Spring/research-pulsar/baumgardt_masses.txt', 'r') as f:
+with open('/Users/adeutsch/Desktop/UVA/25 Spring/research-pulsar/young_slow_GC_project_code/baumgardt_masses.txt', 'r') as f:
     lines = f.readlines()
 
 # Find the start and end indices for the data section
